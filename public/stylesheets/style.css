@@ -1,0 +1,374 @@
+/* =====================================
+              CSS RESET
+===================================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+body {line-height:1; font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {display:block;}
+ul li{list-style:none;}
+a {margin: 0; padding: 0; border: 0; vertical-align: baseline; background: transparent; text-decoration: none; color: inherit; display: inline-block;}
+img {vertical-align: middle;}
+table {border-collapse:collapse;}
+
+/* =====================================
+            GRID SYSTEM
+===================================== */
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.center {
+	max-width: 1280px;
+	margin: 0 auto;
+   
+}
+[class*="col-"] {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+@media (min-width:768px){
+	.col-1  {width: 8.33%; }
+	.col-2  {width: 16.66%;}
+	.col-3  {width: 25%;}
+	.col-4  {width: 33.33%;}
+	.col-5  {width: 41.66%;}
+	.col-6  {width: 50%;}
+	.col-7  {width: 58.33%;}
+	.col-8  {width: 66.66%;}
+	.col-9  {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+.col-fit {padding: 0;}
+.col-right {float: right;}
+.col-left {float: left;}
+
+body, html{
+	width: 100%;
+}
+
+
+
+#wrap{
+	overflow: hidden;
+}
+
+/*index*/
+
+/*index - main*/
+
+#indeximage{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#indeximage .index_wrap{
+	width: 300px;
+	height: 300px;
+	background: #b0696996;
+	text-align: center;
+	position: absolute;
+}
+
+/*index - join,login*/
+
+.index_content, .register_content{
+	padding: 20px;
+}
+
+.index_content .title_main{
+	font-size: 40px;
+}
+
+.index_content .title_sub{
+	font-size: 15px;
+}
+
+.index_content form{
+	padding-top: 15px;
+}
+
+.index_content form input{
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.index_content .join{
+	width: 230px;
+	text-align: right;
+}
+
+.index_content .join a{
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.register_content form input{
+	height: 20px;
+	width: 200px;
+	font-size: 15px;
+}
+
+.register_content form input[type=submit]{
+	margin-bottom: 0;
+	margin-top: 12px;
+	height: 30px;
+}
+
+.otherLogin{
+	margin-top: 10px;
+}
+
+.otherLogin a{
+	font-size: 15px;
+	height: 30px;
+	line-height: 15px;
+	color: #fff;
+}
+
+/*contents*/
+
+/*contents - header*/
+
+.header h1,h2{
+	width:200px;
+	text-align: center;
+}
+
+.header h1{
+  margin: 10px auto 0 auto;
+}
+
+.header h2{
+  font-size: 15px;
+  margin: 5px auto 30px;
+}
+
+.owner{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 15px;
+}
+
+.updatebtn1{
+	width: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.updatebtn1 form{
+	float: left;
+}
+
+.updatebtn1 form input[type="text"]{
+	width: 100px;
+	text-align: center;
+	position: relative;
+	top: -10px;
+}
+
+.updatebtn1 form input[type="submit"]{
+	width: 40px;
+	margin-left: 5px;
+}
+
+/*contents - gnb*/
+
+.gnb{
+	position: fixed;
+	top: 0px;
+	left:-200px;
+	width: 200px;
+	height: 100%;
+	font-size: 25px;
+	background: #864d4d;
+	text-align: center;
+	display: none;
+	color:#fff;
+	z-index: 999;
+}
+
+.menu{
+	line-height: 30px;
+	font-size:18px;
+}
+
+.menu_button{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+
+.menubtn_img{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url("../images/menu_update.png") no-repeat;
+	background-size: contain;
+	text-indent: -999px;
+}
+
+.goNation{
+	font-size: 15px;
+	color: #fff;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+#goNation{
+	display: none;
+}
+
+
+.logout{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: black;
+}
+
+/*contents - main*/
+
+.content{
+	position: relative;
+	width:100%;
+}
+
+.main{
+	width: 100%;
+	background: #dcdcdc;
+}
+
+.goPost{
+	font-size: 15px;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+}
+
+.mainContent{
+	position: relative;
+	padding: 15px;
+	border: 10px solid #fff;
+	box-sizing: border-box;
+	background: #a53434;
+	color: #fff;
+}
+
+.sidemenu{
+	position: absolute;
+	bottom: 0;
+}
+
+.sidemenu, .date{
+	margin-top: 30px;
+}
+
+.sidemenu a{
+	font-size: 15px;
+	float: left;
+}
+
+.sidemenu form{
+	width: 0;
+	position: relative;
+	top: -13px;
+}
+
+.delete{
+	border: 0;
+	background: none;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/* update, posting*/
+
+.post{
+	padding-left:10px;
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.post textarea{
+	height: 120px;
+	margin-top: 10px;
+}
+
+.date{
+	font-size: 14px;
+	text-align: right;
+}
+
+.submit{
+	float: right;
+	width: 303px;
+}
+
+.image input[type="file"] { 
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	padding: 0; 
+	margin: -1px; 
+	overflow: hidden; 
+	clip:rect(0,0,0,0); 
+	border: 0; 
+}
+
+.image label { 
+	font-size: 13px;
+	padding: .5em .75em; 
+	color: #999; 
+	line-height: normal; 
+	vertical-align: middle; 
+	background-color: #fdfdfd; 
+	cursor: pointer; 
+	border: 1px solid #ebebeb; 
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em; 
+}
+ 
+.image .upload-name ,#goNation input{ 
+	display: inline-block; 
+	padding: .5em .75em; 
+	/* label의 패딩값과 일치 */ 
+	font-family: inherit; 
+	line-height: normal;
+	vertical-align: middle; 
+	background-color: #f5f5f5; 
+	border: 1px solid #ebebeb; 
+	border-bottom-color: #e2e2e2; 
+	border-radius: .25em; 
+	-webkit-appearance: none; 
+	/* 네이티브 외형 감추기 */ 
+	-moz-appearance: none; 
+	appearance: none; 
+}
